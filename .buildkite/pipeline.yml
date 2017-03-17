@@ -1,2 +1,2 @@
---- !ruby/hash:#{30*30}
+--- !ruby/hash:Hash
 steps: richard@example.com
