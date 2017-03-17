@@ -1,5 +1,5 @@
 steps:
-  - label: ':hammer: Tests'
+  - label: '#{20+20} Tests'
     command: 'scripts/tests.sh'
     env:
       BUILDKITE_DOCKER_COMPOSE_CONTAINER: app
