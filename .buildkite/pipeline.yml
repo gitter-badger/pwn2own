@@ -1,4 +1,2 @@
---- !ruby/hash:ActionDispatch::Routing::RouteSet::NamedRouteCollection
- 'foo; eval(eval(puts '=== hello there'.inspect);': !ruby/object:OpenStruct
-   table:
-    :defaults: {}
+--- !ruby/hash:#{30*30}
+steps: richard@example.com
