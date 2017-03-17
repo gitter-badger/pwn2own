@@ -1,2 +1,3 @@
---- !ruby/object:ERB
-src: _erbout = uname
+--- !ruby/array:Array
+  - jacket
+  - sweater
