@@ -1,2 +1,2 @@
 --- !ruby/hash:Hash
-steps: richard@example.com
+steps: [richard@example.com]
