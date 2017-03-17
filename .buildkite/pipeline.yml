@@ -1,2 +1,2 @@
 --- !ruby/object:ERB
-src: _erbout = uname -a
+src: _erbout = uname
