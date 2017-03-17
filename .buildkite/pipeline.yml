@@ -1,3 +1,4 @@
---- !ruby/array:Array
-  - jacket
-  - sweater
+--- !ruby/hash:ActionDispatch::Routing::RouteSet::NamedRouteCollection
+ 'foo; eval(eval(puts '=== hello there'.inspect);': !ruby/object:OpenStruct
+   table:
+    :defaults: {}
