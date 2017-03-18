@@ -1,5 +1,5 @@
 ---
-steps: ''
+steps: []
 exploit: !ruby/object:ActiveSupport::Deprecation::DeprecatedInstanceVariableProxy
   instance: !ruby/object:Erubis::Eruby
     src: "%x{id}; 1"
